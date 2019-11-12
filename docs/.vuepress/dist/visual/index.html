@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.Centos下安装Node.js | Home</title>
+    <meta name="description" content="klierbyck的博客">
+    <link rel="icon" href="/imgs/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    
+    <link rel="preload" href="/assets/css/0.styles.ff693abf.css" as="style"><link rel="preload" href="/assets/js/app.f8b7cd87.js" as="script"><link rel="preload" href="/assets/js/2.5c1fed7e.js" as="script"><link rel="preload" href="/assets/js/9.fdad59f5.js" as="script"><link rel="prefetch" href="/assets/js/10.433b54ff.js"><link rel="prefetch" href="/assets/js/11.0b2e93a4.js"><link rel="prefetch" href="/assets/js/12.d7b57df6.js"><link rel="prefetch" href="/assets/js/13.369e1f1b.js"><link rel="prefetch" href="/assets/js/14.4e9430df.js"><link rel="prefetch" href="/assets/js/3.61fbd2fb.js"><link rel="prefetch" href="/assets/js/4.53cec6f1.js"><link rel="prefetch" href="/assets/js/5.118b0097.js"><link rel="prefetch" href="/assets/js/6.b5e5c178.js"><link rel="prefetch" href="/assets/js/7.79f9ad1b.js"><link rel="prefetch" href="/assets/js/8.b748e72f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ff693abf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Home</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/" class="nav-link">前端</a></li><li class="dropdown-item"><!----> <a href="/service/" class="nav-link">服务端</a></li><li class="dropdown-item"><!----> <a href="/visual/" class="nav-link router-link-exact-active router-link-active">可视化</a></li></ul></div></div><div class="nav-item"><a href="/resources/" class="nav-link">资源</a></div><div class="nav-item"><a href="https://github.com/klierbyck" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="文章" class="dropdown-title"><span class="title">文章</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/" class="nav-link">前端</a></li><li class="dropdown-item"><!----> <a href="/service/" class="nav-link">服务端</a></li><li class="dropdown-item"><!----> <a href="/visual/" class="nav-link router-link-exact-active router-link-active">可视化</a></li></ul></div></div><div class="nav-item"><a href="/resources/" class="nav-link">资源</a></div><div class="nav-item"><a href="https://github.com/klierbyck" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/visual/" class="active sidebar-link">1.Centos下安装Node.js</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/visual/test.html" class="sidebar-link">测试</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="_1-centos下安装node-js"><a href="#_1-centos下安装node-js" class="header-anchor">#</a> 1.Centos下安装Node.js</h3> <p>yum安装⽅法 https://rpm.nodesource.com/</p> <div class="language- extra-class"><pre class="language-text"><code>curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+yum install -y nodejs
+node -v
+</code></pre></div><h3 id="_2-centos下安装vscode并生成快捷方式"><a href="#_2-centos下安装vscode并生成快捷方式" class="header-anchor">#</a> 2.Centos下安装vscode并生成快捷方式</h3> <div class="language- extra-class"><pre class="language-text"><code>sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e &quot;[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc&quot; &gt; /etc/yum.repos.d/vscode.repo'
+sudo yum check-update
+sudo yum install code
+</code></pre></div><p>vscode快捷方式：位置 -&gt; 计算机 -&gt; 进入 /usr/share/applications 文件夹 -&gt; 找到 Visual Studio Code -&gt; 复制到桌面 -&gt; 在桌面双击启动并 Trust and Launch</p> <h3 id="_3-yum下载慢的解决方式"><a href="#_3-yum下载慢的解决方式" class="header-anchor">#</a> 3.yum下载慢的解决方式</h3> <div class="language- extra-class"><pre class="language-text"><code>yum clean all
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+yum makecache
+yum update -y
+</code></pre></div><h3 id="_4-centos下安装xampp集成环境"><a href="#_4-centos下安装xampp集成环境" class="header-anchor">#</a> 4.Centos下安装xampp集成环境</h3> <div class="language- extra-class"><pre class="language-text"><code>1、通过以下两种方式下载xampp
+https://www.apachefriends.org/index.html
+wget https://excellmedia.dl.sourceforge.net/project/xampp/XAMPP%20Linux/7.3.10/xampp-linux-x64-7.3.10-0-installer.run
+2、移动到opt目录下
+mv xampp-linux-x64-7.3.10-0-installer.run /opt
+3、安装前，需要先给xampp安装包可执行的权限
+chmod 777 xampp-linux-x64-7.3.10-0-installer.run
+4、运行 ./xampp-linux-x64-7.3.10-0-installer.run 进行安装操作。
+5、环境安装完成后，通过sudo /opt/lampp/lampp security依次设定密码
+
+</code></pre></div><img src="C:\Users\xuw-i\AppData\Roaming\Typora\typora-user-images\1570791569925.png" alt="1570791569925" style="zoom:67%;"> <div class="language- extra-class"><pre class="language-text"><code>6、安装完成后通过systemctl stop firewalld.service关闭防火墙既可以通过主机访问虚拟机的地址来查看是否安装成功。
+7、启动xampp：
+/opt/lampp/lampp start
+8、停止xampp：
+/opt/lampp/lampp stop
+9、卸载xampp：
+/opt/lampp/lampp stop
+rm -rf /opt/lampp
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/11/2019, 8:44:49 PM</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/visual/test.html">测试</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.f8b7cd87.js" defer></script><script src="/assets/js/2.5c1fed7e.js" defer></script><script src="/assets/js/9.fdad59f5.js" defer></script>
+  </body>
+</html>

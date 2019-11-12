@@ -7,7 +7,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "pub": "bash deploy.sh"
   },
   "dependencies": {
     "element-ui": "^2.12.0"
