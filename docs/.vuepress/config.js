@@ -50,6 +50,10 @@ module.exports = {
             ]
         },
         sresourcesbarDepth: 2,
+        algolia: {
+            apiKey: '<API_KEY>',
+            indexName: '<INDEX_NAME>'
+        },
         lastUpdated: 'Last Updated',
     },
     serviceWorker: true
